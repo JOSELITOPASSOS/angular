@@ -1,12 +1,7 @@
-<div class="text-center mt-3 mb-3">
-    <form>
-      <i class="fa fa-search mr-2" aria-hidden="true"></i>
-        <input class="rounded" type="search" placeholder="serach..." autofocus
-        (keyup)="debounce.next($event.key)">
-    </form>
-</div>
-<ap-load-button [hasMore]="hasMore"
-                (click)="load()">
-</ap-load-button>
-{{ filter }}
+<ap-search placeHolder = 'Informe uma descrição'
+    [value]="filter"
+    (onTyping)="filter = $event">
+</ap-search>
+<p>{{ filter }}</p>
 <ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
+<ap-load-button [hasMore]="hasMore" (click)="load()"></ap-load-button>
