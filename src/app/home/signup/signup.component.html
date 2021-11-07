@@ -29,14 +29,17 @@
         <ap-vmessage text="User name is required"
                      *ngIf="signupForm.get('userName')?.errors?.required">
         </ap-vmessage>
-        <ap-vmessage text="Must be lowercase"
-                     *ngIf="signupForm.get('userName')?.errors?.pattern">
+        <!-- <ap-vmessage text="Must be lowercase" *ngIf="signupForm.get('userName')?.errors?.pattern"> -->
+        <ap-vmessage text="Must be lowercase" *ngIf="signupForm.get('userName')?.errors?.lowerCase">
         </ap-vmessage>
         <ap-vmessage text="Minimum length is 2"
                      *ngIf="signupForm.get('userName')?.errors?.minlength">
         </ap-vmessage>
         <ap-vmessage text="Max length is 30"
                      *ngIf="signupForm.get('userName')?.errors?.maxlength">
+        </ap-vmessage>
+        <ap-vmessage text="User name already taken"
+                     *ngIf="signupForm.get('userName')?.errors?.userNameTaken">
         </ap-vmessage>
     </div>
 
@@ -53,7 +56,9 @@
         </ap-vmessage>
     </div>
 
-    <button class="btn btn-primary btn-block">Register</button>
+    <button class="btn btn-primary btn-block" [disabled]="signupForm.invalid || signupForm.pending">
+        Register
+    </button>
 
     <p>Already a user?<a [routerLink]="['']">Sign In!</a></p>
 </form>
