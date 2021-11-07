@@ -9,7 +9,7 @@ export class UserService {
 
   private userName!: string;
 
-  private userSubject = new BehaviorSubject<User | null>({});
+  private userSubject = new BehaviorSubject<User | null>(null);
   constructor(private tokenService: TokenService) {
     this.tokenService.hasToken() &&
      this.decodeAndNotify();
