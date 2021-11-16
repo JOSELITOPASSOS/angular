@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Component({
   templateUrl: './signin.component.html'
 })
-export class SigninComponent implements OnInit, AfterViewInit {
+export class SignInComponent implements OnInit, AfterViewInit {
 
   loginForm!: FormGroup;
 
@@ -31,8 +31,6 @@ export class SigninComponent implements OnInit, AfterViewInit {
       userName: ['', Validators.required],
       password: ['', Validators.required],
     });
-    // this.platformDetectorService.isPlatformBrowser() &&
-    //       this.userNameInput?.nativeElement.focus();
   }
 
   login(){
