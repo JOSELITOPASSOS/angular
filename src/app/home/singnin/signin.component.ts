@@ -1,7 +1,7 @@
 import { PlatformDetectorService } from './../../core/plataform-detector/plataform-detector.service';
 import { AuthService } from './../../core/auth/auth.service';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({

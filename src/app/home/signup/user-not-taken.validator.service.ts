@@ -1,6 +1,6 @@
 import { debounceTime, first, map, switchMap } from 'rxjs/operators';
 import { SignUpService } from './signup.service';
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { AbstractControl } from '@angular/forms';
 
 @Injectable()
