@@ -7,6 +7,7 @@ import { SignInComponent } from './singnin/signin.component';
 import { NgModule } from "@angular/core";
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SignUpService } from './signup/signup.service';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,9 @@ import { CommonModule } from '@angular/common';
     VMessageModule,
     RouterModule,
     HomeRoutingModule
+  ],
+  providers: [
+    SignUpService
   ]
 })
 export class HomeModule {}

@@ -3,7 +3,7 @@ import { SignUpService } from './signup.service';
 import { Injectable } from "@angular/core";
 import { AbstractControl } from '@angular/forms';
 
-@Injectable({ providedIn: 'root'})
+@Injectable()
 export class UserNoTakenValidatorService {
 
   constructor(private signUpService: SignUpService){}
