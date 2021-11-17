@@ -16,13 +16,12 @@ export class AuthService {
   ) {}
 
   authenticate(userName: string, password: string) {
-    return this.http.post(`${this.API_URL}/user/login`, {userName, password}, {observe: 'response'}).pipe(
-      tap( res => {
+    return this.http.post(`${this.API_URL}/user/login`, {userName, password}, {observe: 'response'})
+        .pipe(
+            tap( res => {
                     const authToken: string = res.headers.get('x-access-token') ?? '';
                     this.userService.setToken(authToken);
-                    // window.localStorage.setItem('authToken', authToken);
-                    console.log(`User ${userName} authenticated with token ${authToken}`)
-      })
-    );
+            })
+        );
   }
 }
