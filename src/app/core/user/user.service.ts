@@ -1,7 +1,7 @@
 import { User } from './user';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { TokenService } from './../token/token.service';
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import jwtDecode from 'jwt-decode';
 
 @Injectable( {providedIn: 'root'} )

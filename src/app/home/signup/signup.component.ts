@@ -2,9 +2,9 @@ import { PlatformDetectorService } from './../../core/plataform-detector/platafo
 import { SignUpService } from './signup.service';
 import { NewUser } from './new-user';
 import { UserNoTakenValidatorService } from './user-not-taken.validator.service';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from "@angular/core";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { lowerCaseValidator } from "src/app/shared/validators/lower-case.validator";
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { lowerCaseValidator } from 'src/app/shared/validators/lower-case.validator';
 import { Router } from '@angular/router';
 
 @Component({

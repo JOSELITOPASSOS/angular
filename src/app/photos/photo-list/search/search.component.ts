@@ -1,5 +1,5 @@
 import { Subject } from 'rxjs';
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from "@angular/core";
+import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
 import { debounceTime } from 'rxjs/operators';
 
 @Component({

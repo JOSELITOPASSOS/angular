@@ -4,7 +4,7 @@ import { SignUpComponent } from './signup/signup.component';
 import { RouterModule } from '@angular/router';
 import { VMessageModule } from './../shared/components/vmessage/vmessage.module';
 import { SignInComponent } from './singnin/signin.component';
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SignUpService } from './signup/signup.service';

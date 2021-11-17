@@ -1,5 +1,5 @@
 import { Photo } from './../photo/photo';
-import { Pipe, PipeTransform } from "@angular/core";
+import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({name: 'filterByDescription'})
 export class FilterByDescription implements PipeTransform {

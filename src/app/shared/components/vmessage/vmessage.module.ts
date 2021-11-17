@@ -1,5 +1,5 @@
 import { VMessageComponent } from './vmessage.component';
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [VMessageComponent],
